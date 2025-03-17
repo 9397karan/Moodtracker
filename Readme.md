@@ -58,4 +58,3 @@ You can access the live version of the Mood Tracker Calendar here:
 - Implement a backend to store data permanently.
 - Enhance UI with animations and additional mood tracking features.
 
-
