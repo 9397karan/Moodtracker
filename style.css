@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0A1128;
+    padding: 10px;
+}
+
+.container {
+    background-color: #001F54;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: #FEFCFB;
+    margin-bottom: 15px;
+}
+
+.header button {
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    color: #FEFCFB;
+    cursor: pointer;
+}
+
+.week {
+    background-color: #034078;
+    border-radius: 20px;
+    display: flex;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    color: #FEFCFB;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.date, .empty {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #021942;
+}
+
+.date {
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.date:hover {
+    background-color: #FF8C00;
+}
+
+.active {
+    background-color: #FF8C00;
+}
+
+.empty {
+    color: #888;
+    background-color: transparent;
+}
+
+.dra {
+    font-size: 25px;
+}
+
+.emoji {
+    background-color: transparent;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    border-bottom: 1px solid yellow;
+}
+
+.emoji .dra {
+    font-size: 40px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+    }
+
+    .header button {
+        font-size: 25px;
+    }
+
+    .week {
+        font-size: 12px;
+    }
+
+    .date, .empty {
+        width: 35px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .emoji .dra {
+        font-size: 35px;
+    }
+}
